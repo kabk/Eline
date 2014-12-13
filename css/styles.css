@@ -37,6 +37,13 @@ body {
 }
 
 
+h3 {
+	font-family: "Open Sans";
+	text-decoration: none;
+	font-size: 80px;
+	color: white;
+}
+
 h2 {
 	font-family: akkurat;
 	text-decoration: none;
