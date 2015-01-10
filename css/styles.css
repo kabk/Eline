@@ -68,9 +68,9 @@ p {
 	font-weight: 400;
 */
 	letter-spacing: 1px;
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: 200;
-	line-height: 30px;
+	line-height: 20px;
 }
 
 #tekstbox {
@@ -80,7 +80,7 @@ p {
 
 li {
     list-style: none;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
 	letter-spacing: 2px;
@@ -102,28 +102,15 @@ nav {
     margin-left: 0;
     top: 5%;
     text-decoration: none;
-
+	padding-left: 7%;
+	display: none;
     
 }
 
 
-
-div#icoontjeRechts {
-	position: absolute; 
-	top: 5%; 
-	right: 5%; 
-	width: 40px;
-}
-
-div#icoontjeRechts img {
-	margin-bottom: 10px;
-	width: 50%;
-}
-
-
-nav {
+/*nav {
 	padding-left: 5%;
-}
+} */
 nav ul {
 	list-style: none;
 	margin: 0;
@@ -134,19 +121,32 @@ nav ul li {
 }
 
 .navclick {
+	
 	position: fixed;
-	right: 30px;
-	top: 10px;
-	text-align: right;
-	font-size: 8pt;
+	width: 200px;
+    
+    float: left;
+    margin-left: 0;
+    
+    top: 5%;
+    text-decoration: none;
+	padding-left: 5%;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	letter-spacing: 2px;
+	margin-left: 0;
+
 }
 
 .navcover {
 	position: absolute;
-	right: 30px;
-	height: 100%;
-	width: 15%;
-	background: white;
+    width: 200px;
+    float: left;
+    margin-left: 0;
+    top: 5%;
+    text-decoration: none;
+	padding-left: 5%;
 	display: none;
 }
 
@@ -156,5 +156,17 @@ video#bgvid {
 	width: auto; height: auto; z-index: -100;
 	background: url(video/club.png) no-repeat;
 	background-size: cover;
-	opacity: 0.6;
+	opacity: 0,9;
+}
+
+div#plusje {
+	/* position: absolute; */
+	top: 5%; 
+	right: 5%; 
+	width: 40px;
+}
+
+div#Plusje img {
+	margin-bottom: 10px;
+	width: 50%;
 }

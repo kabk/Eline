@@ -6,33 +6,73 @@
         <title>Naamloos document</title>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <style type="text/css">
+            div#tekstbox {
+                /*-webkit-filter: blur(7px);*/
+            }
+        </style>
+                <script src="jquery.min.js"></script>
+            <script>
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
+
+            $(document).ready(function(){
+              $(".navclick").click(function(){
+                $("nav").slideToggle(600);
+              });
+            });
+
+        </script> 
     </head>
     <body>
-        <nav>
-            <ul><li><a href="abstract.html">abstract</a></li>
-                <li><a href="index.html">voorwoord</a></li>
-                <li><a href="inleiding.html">inleiding</a></li>
-                <li><a href="hoofdstuk1.html">hoofdstuk 1</a></li>
-                <li><a href="hoofdstuk2.html">hoofdstuk 2</a></li>
-                <li><a href="hoofdstuk3.html">hoofdstuk 3</a></li>
-                <li><a href="hoofdstuk4.html">hoofdstuk 4</a></li>
-                <li><a href="conclussie.html">conclussie</a></li>
-                <br>
-                <li><a href="bronnen.html">bronnen</a></li>
-                <li><a href="interviews.html">interviews</a></li>
-            </ul>
-        </nav>
-        <div id="icoontjeRechts">
-            <a href="#dikke_drol1"><img src="image/trash.gif"   alt="" /></a> <br />
-            <a href="#dikke_drol2"><img src="image/plus.gif"    alt="" /></a> <br />
-            <a href="#dikke_drol3"><img src="image/down.gif"    alt="" /></a> <br />
-            <a href="#dikke_drol3"><img src="image/print.gif"   alt="" /></a> <br />
+        <a href="#" id="mauPlus" style="-webkit-filter: blur(0px) !important;">
+            <div id="plusje"> <img src="image/plus.gif"    alt="" /> </div>
+        </a>
+        
+        <video autoplay loop id="bgvid" poster="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+        <source src="video/Sequeynce 07.mp4" type="video/mp4">
+
+        </video>
+        
+        <div  id="alles">
+            <nav>
+                <ul><li><a href="abstract.html">abstract</a></li>
+                    <li><a href="index.html">voorwoord</a></li>
+                    <li><a href="inleiding.html">inleiding</a></li>
+                    <li><a href="hoofdstuk1.html">Een onzichtbare wereld</a></li>
+                    <li><a href="hoofdstuk2.html">Wat wordt er ontworpen binnen de biotechnologie?</a></li>
+                    <li><a href="hoofdstuk3.html">Ontwerpers en biotechnologie? </a></li>
+                    <li><a href="hoofdstuk4.html">Ontwerpen, kunst en technologie in dialoog</a></li>
+                    <li><a href="conclusie.html">conclussie</a></li>
+                    <br>
+                    <li><a href="bronnen.html">bronnen</a></li>
+                    <li><a href="interviews.html">interviews</a></li>
+                </ul>
+            </nav>
+
+        <div class="navclick">
+            <a>Navigatie</a>
         </div>
+        
+         <!-- <div id="icoontjeRechts">
+            <a href="#dikke_drol2"><img src="image/plus.gif"    alt="" /></a> <br />
+        </div> -->
+        
         <!-- <a href="oudetekst.html"> <a href="oudetekst.html"> <div id="trash"> </div> </a> -->
         <div id="tekstbox">
-
-            <h1> Hoofdstuk 2 <br>
-            Wat wordt er ontworpen binnen de biotechnologie? </h1> 
+        <h1> Hoofdstuk 2 <br> Wat wordt er ontworpen binnen de biotechnologie? </h1> 
                 <p>
                 In het rapport 'Leven Maken' geeft het Rathenau Instituut een idee van synthetische biologie: "Onderzoekers omschrijven synthetische biologie als een nieuwe vorm van biotechnologie, waarbij het modificeren van bestaande, natuurlijke levensvormen geleidelijk overgaat in het gericht ontwerpen van nieuwe, kunstmatige levensvormen."
 </p><p>
@@ -94,16 +134,62 @@
 
                 Behalve het ethische belang voor maatschappelijke discussies (Wat leven eigenlijk is en hoe gaan we om met regels?), is er weinig spreken over speculatieve toekomst verwachtingen binnen bijvoorbeeld 50 jaar. 
                 Maar als de technologie nu zo snel gaat, wat gebeurd er als we straks ons zelf kunnen ontwerpen? Met het idee dat we ons eigen virtuele wereld kunnen scheppen, stel dat we in staat zijn om het echte leven te ontwerpen? Hebben we ons ‘biologische’ lichaam dan nog wel nodig? Andrew Hessel, onderzoeker aan de Singularity Universiteit waarschuwt: “In de toekomst zouden hackers virussen en bacteriën kunnen herprogrammeren om het menselijk brein te infecteren en zo het gedrag van mensen aan te passen”26 Volgens hem is synthetische biologie één van de krachtigste technologieën in de wereld". Cellen zijn volgens hem levende computers en DNA is de programmeertaal. En stel dat deze programmeertaal op het zelfde niveau bruikbaar wordt als de huidige programmeertalen?
-                </p> 
-
+                </p>
         </div>
-
+        
+    </div>
         
            
               
-             
+    <script type="text/javascript">
+        var mauPlus = document.getElementById('mauPlus');
+        
+        var videoDing = document.getElementById('bgvid');
+        var mainText = document.getElementById('alles');
+
+        var clickCount = 10;
+        var clickCountCurrent = 0;
+
+        var mainTextBlur = clickCount;
+        mainText.style.WebkitFilter = 'blur('+mainTextBlur+'px)';
+        
+        var videoBlur = 0;
+        videoDing.style.WebkitFilter = 'blur('+videoBlur+'px)';
+
+
+        mauPlus.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            if(clickCountCurrent < clickCount) {
+                mainTextBlur--;
+                videoBlur++;
+            } else {
+                mainTextBlur++;
+                videoBlur--;
+            }
+            
+            mainText.style.WebkitFilter = 'blur('+mainTextBlur+'px)';
+            videoDing.style.WebkitFilter = 'blur('+videoBlur+'px)';
+
+            // debug
+            // console.log('mainTextBlur: blur('+mainTextBlur+'px) clickCountCurrent: ' + clickCountCurrent + ' videoBlur: blur('+videoBlur+'px)');
+
+            clickCountCurrent++;
+            if(clickCountCurrent == clickCount*2) {
+                clickCountCurrent = 0
+            }
+        })
+
+    </script>
     </body>
 </html>
 
 
 
+
+
+
+
+
+
+    

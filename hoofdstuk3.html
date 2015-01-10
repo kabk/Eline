@@ -6,110 +6,198 @@
         <title>Naamloos document</title>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <style type="text/css">
+            div#tekstbox {
+                /*-webkit-filter: blur(7px);*/
+            }
+        </style>
+                <script src="jquery.min.js"></script>
+            <script>
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
+
+            $(document).ready(function(){
+              $(".navclick").click(function(){
+                $("nav").slideToggle(600);
+              });
+            });
+
+        </script> 
     </head>
     <body>
-        <nav>
-            <ul><li><a href="abstract.html">abstract</a></li>
-                <li><a href="index.html">voorwoord</a></li>
-                <li><a href="inleiding.html">inleiding</a></li>
-                <li><a href="hoofdstuk1.html">hoofdstuk 1</a></li>
-                <li><a href="hoofdstuk2.html">hoofdstuk 2</a></li>
-                <li><a href="hoofdstuk3.html">hoofdstuk 3</a></li>
-                <li><a href="hoofdstuk4.html">hoofdstuk 4</a></li>
-                <li><a href="conclussie.html">conclussie</a></li>
-                <br>
-                <li><a href="bronnen.html">bronnen</a></li>
-                <li><a href="interviews.html">interviews</a></li>
-            </ul>
-        </nav>
-        <div id="icoontjeRechts">
-            <a href="#dikke_drol1"><img src="image/trash.gif"   alt="" /></a> <br />
-            <a href="#dikke_drol2"><img src="image/plus.gif"    alt="" /></a> <br />
-            <a href="#dikke_drol3"><img src="image/down.gif"    alt="" /></a> <br />
-            <a href="#dikke_drol3"><img src="image/print.gif"   alt="" /></a> <br />
+        <a href="#" id="mauPlus" style="-webkit-filter: blur(0px) !important;">
+            <div id="plusje"> <img src="image/plus.gif"    alt="" /> </div>
+        </a>
+        
+        <video autoplay loop id="bgvid" poster="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+        <source src="video/Sequeynce 07.mp4" type="video/mp4">
+
+        </video>
+        
+        <div  id="alles">
+            <nav>
+                <ul><li><a href="abstract.html">abstract</a></li>
+                    <li><a href="index.html">voorwoord</a></li>
+                    <li><a href="inleiding.html">inleiding</a></li>
+                    <li><a href="hoofdstuk1.html">Een onzichtbare wereld</a></li>
+                    <li><a href="hoofdstuk2.html">Wat wordt er ontworpen binnen de biotechnologie?</a></li>
+                    <li><a href="hoofdstuk3.html">Ontwerpers en biotechnologie? </a></li>
+                    <li><a href="hoofdstuk4.html">Ontwerpen, kunst en technologie in dialoog</a></li>
+                    <li><a href="conclusie.html">conclussie</a></li>
+                    <br>
+                    <li><a href="bronnen.html">bronnen</a></li>
+                    <li><a href="interviews.html">interviews</a></li>
+                </ul>
+            </nav>
+
+        <div class="navclick">
+            <a>Navigatie</a>
         </div>
+        
+         <!-- <div id="icoontjeRechts">
+            <a href="#dikke_drol2"><img src="image/plus.gif"    alt="" /></a> <br />
+        </div> -->
+        
         <!-- <a href="oudetekst.html"> <a href="oudetekst.html"> <div id="trash"> </div> </a> -->
         <div id="tekstbox">
+                <h1> Hoofdstuk 3 <br>
+                Wat ontwerpen ontwerpers in het gebied van biotechnologie? <br>
+                met micro-organismen. </h1>
+                <p>
+                ‘De bio-kunst is een onderdeel van een recente ontwikkeling in de hedendaagse kunst, waarbij kunstenaars werken met organismen of processen van biotechnologie, zoals genetische modificatie. De Engelse benaming "BioArt" is in 1997 gemunt door Eduardo Kac om zijn kunstwerk Time Capsule te beschrijven’1
+                </p> <p>
+                Een groeiende aantal ontwerpers en kunstenaars heeft zijn interesse en inspiratie gevonden in de biotechnologie en de natuur die oplossingen kan bieden. Deze ontwerpers belichten op diverse manieren verschillende invalshoeken door middel van diverse wetenschappelijke technieken die eerder zijn omschreven. Genetische modificatie, weefselkweek, en klonen zijn enkele technieken die worden ingezet. Een bacterie die er voor zorgt dat we licht geven in het donker, textiel gemaakt van cellulose, een bacterieradio, een schimmel die plastic afbreekt en met een gist omgezet wordt in biobrandstof of een bacterie die gaten in muren kan dicht groeien, zijn enkele adembenemende ontwerpen met een eigen verhaal. Terwijl we ons druk maken over de veiligheid van genetisch gemanipuleerde organismen, blijft biowetenschap voor de meeste mensen iets abstracts en ongrijpbaars2. Want biedt het voor ontwerpers een bron van inspiratie en levert het manieren op om te laten zien hoe de technologie in de maatschappelijke interactie vorm krijgt? Roept het emotie op? Of zijn het inzetbare futuristische toekomst visies?
+                </p> <p>
 
-<h2> Hoofdstuk 3 <br>
-Wat ontwerpen ontwerpers in het gebied van biotechnologie? <br>
-met micro-organismen. </h2>
-<p>
-‘De bio-kunst is een onderdeel van een recente ontwikkeling in de hedendaagse kunst, waarbij kunstenaars werken met organismen of processen van biotechnologie, zoals genetische modificatie. De Engelse benaming "BioArt" is in 1997 gemunt door Eduardo Kac om zijn kunstwerk Time Capsule te beschrijven’1
-</p> <p>
-Een groeiende aantal ontwerpers en kunstenaars heeft zijn interesse en inspiratie gevonden in de biotechnologie en de natuur die oplossingen kan bieden. Deze ontwerpers belichten op diverse manieren verschillende invalshoeken door middel van diverse wetenschappelijke technieken die eerder zijn omschreven. Genetische modificatie, weefselkweek, en klonen zijn enkele technieken die worden ingezet. Een bacterie die er voor zorgt dat we licht geven in het donker, textiel gemaakt van cellulose, een bacterieradio, een schimmel die plastic afbreekt en met een gist omgezet wordt in biobrandstof of een bacterie die gaten in muren kan dicht groeien, zijn enkele adembenemende ontwerpen met een eigen verhaal. Terwijl we ons druk maken over de veiligheid van genetisch gemanipuleerde organismen, blijft biowetenschap voor de meeste mensen iets abstracts en ongrijpbaars2. Want biedt het voor ontwerpers een bron van inspiratie en levert het manieren op om te laten zien hoe de technologie in de maatschappelijke interactie vorm krijgt? Roept het emotie op? Of zijn het inzetbare futuristische toekomst visies?
-</p> <p>
 
-
-3.1 Wat is bio-kunst? <br>
-Ofschoon experimenten zoals klonen en andere genetische manipulaties van dieren in de biologie worden al vrij lang gedaan, is kunst die met biologisch materiaal werkt pas goed op gang gekomen in de jaren negentig van de vorige eeuw (Anker & Nelkin 2004). Waar in 2005 nog iedereen refereerde aan het groene konijn, kunnen we nu spreken over een breder scala aan betrokkenen. Volgens Taco Stolk docent studierichting Art Scince aan de KABK is bio-kunst hot onder de studenten. Er wordt zelfs les gegeven in de basis principes van biotechnologie.
-Bio-kunst is een kunst praktijk waar mensen zo als kunstenaars, architecten of ontwerpers werken met levende weefsels, bacteriën, levende organismen en leef processen. Met behulp van wetenschappelijke processen zoals biotechnologie worden de kunstwerken gemaakt in laboratoria, galerieën, of studio's. De omvang BioArt wordt door sommige kunstenaars beperkt tot enkel "levende vormen", terwijl andere kunstenaars het beeld van de hedendaagse genetische technologie toevoegen, of vereisten als adresseren van controverse blinde vlekken in het karakter van levenswetenschappen toevoegen aan de term. Het is dan ook een begrip wat op verschillende manieren geïnterpreteerd kan worden. 
-</p> <p>
-3.2 Maatstaven en algemene interpretatie<br> 
-Wanneer is kunst bio-kunst? Welke criteria zijn daar aan verbonden en hoe worden die beschreven. Uit het onderzoek 'Wetenschap en kunst in dialoog. Hanssen, L. Sleenhoff, S. Stolk, S3' wordt gesproken over drie soorten bio-kunst. Een eerste maatstaf voor bio-kunst dat in het onderzoek naar voren komt; ‘is dat er basisprincipes uit de genetica ten grondslag liggen.’ Dit betekend dat een bio-kunstwerk niet alleen uit ‘levend-dna’ gemaakt hoeft te zijn. Het kan ook geschilderd zijn of uit glas bestaan. ‘Deze norm heeft meer betrekking op het concept die de kunstenaar wil vertellen. De ideeën waaruit het kunstwerk is ontstaan, komen uit de genetica of het genomicsonderzoek4’ Vervolgens wordt er gesproken over een tweede vorm waarbij daadwerkelijk levend dna in het kunstwerk is verwerkt. Deze norm relateert zich meer aan het tot stand komen van het werk. Hierbij is het maken van bio-kunst een experiment met gebruikmaking van wetenschappelijke methoden door de kunstenaar. Binnen de wettelijk geldende regels, maar buiten de richtlijnen van het wetenschappelijke domein kan de kunstenaar spelen met de mogelijkheden van de technieken in de genomics en biotechnologie5. Voor beide manieren het noodzakelijk dat kunstenaars zich vooraf verdiepen in de materie van biotechnologie en genomics (Sleenhoff, 2005). Vervolgens wordt besproken dat Natuurwetenschappers uit eindelijk met nog een derde beoordelingsvorm van bio-kunst komen. En deze norm komt mij irriterend genoeg bekend voor. Zij stellen dat het beeld brengen uit de wetenschap, biotechnologie of microbiologie ook kunst is. Dat kan een afbeelding zijn van een eiwitstructuur of een dna -molecuul.6 Het zou dan gebaseerd zijn op letterlijke verbeelding. Hoewel er door natuurwetenschappers wordt gesproken over een artistieke vrijheid staat het meer in dienst van de wetenschap. Het zou een vorm kunnen zijn die door de wetenschap wordt gezien als het illustreren van de wetenschap naar de maatschappij. Dit kwam ook sterk naar voren in interviews. Volgens (Sleenhof, 2005) dienen Bio-kunstwerken evenwel niet te worden ingezet als pr -instrument. Er kan dus volgens het onderzoek worden gesproken over bio-kunst als ten minste één van de volgende drie omschrijvingen wordt voldaan. ‘Ten eerste dat de kunst is gebaseerd op genetische principes. Ten tweede dat er DNA in het kunstwerk is verwerkt. Ten derde dat het kunst is waarbij biotechnologie of genomics in beeld wordt gebracht.’ Aldus het onderzoek. De diverse omschrijvingen zorgen wellicht voor verwarring, het kan dan ook divers worden geïnterpreteerd en het is stevig genoeg om eigen identiteiten te behouden. Er wordt in de beschouwing van bio-kunst onderhandeld over de betekenis van verschillende gezichtspunten en hoe die zich ten opzichte van elkaar verhouden.7
-</p> <p>
-3.3 Maar wat is dan Bio-design ? <br>
-De bio-design is een conceptueel huidige industrieel ontwerp gelanceerd door Luigi Colani al de 1960 De aanpak wil voortbouwen op de technische oplossingen die worden aangeboden door de natuur aan de industriële objecten ontwerpproblemen te voldoen.
-</p> <p>
-Als het grensgebied tussen kunst en ontwerpen een vervaagd gebied is kan worden gezegd dat bio-design enkele hiervoor beschreven overeenkomsten draagt. Wellicht zijn de toepassingen in Bio Design eerder gerelateerd aan toepassingen waarbij toekomstige functionaliteit in beeld wordt gebracht.  In het boek ‘Bio Design Nature Science and Creatifity’ selecteerde William Myers 50 werken waarbij levend materiaal een onderdeel vormen van het ontwerp. De werken introduceren visionaire strategieën voor het verbeteren van de ecologische prestaties van de objecten en gebouwen om ons heen. Het zijn esthetische mogelijkheden die mogelijk worden gemaakt door nieuwe biotechnische en provocerende experimenten die zowel kansen en gevaren stelt in het manipulerende leven voor menselijke doeleinden. Bio-design wordt ook omschreven als een ontwerp of fabricage die na-biologie geïnspireerde benadering is ontworpen. In tegenstelling tot biomimetica8, Cradle to Clradle9 of de populaire frustrerende term als "groen ontwerp" verwijst bio-design naar levende organismes als een essentieel onderdeel in het ontwerp. Bio-design verwijst ook naar experimenten voor toekomstige industriële mechanische systemen met biologisch proces. Na functioneel en speculatief ontwerp is de laatste selectie van het boek geweid aan hedendaagse kunst. Een presentatie van een aantal werken dat levend materiaal integreren en veranderingen voorspellen in hoe we leven of wat natuurlijk is in de nabije toekomst zou kunnen definiëren. Bio-design is niet alleen terug te vinden in het boek van Meyers, er is een uiteenlopend scala aan ontwerpers, architecten en kunstenaars die zich verkennen in biotechnologie. Daarbij wordt elk jaar een Bio Art & Design Award uitgereikt die jonge kunstenaars en ontwerpers stimuleert om de wereld van bio-kunst en bio-design te ontdekken en verder te ontwikkelen. 
-</p> <p>
-3.4 Benaderingen<br>
-Volgens Taco Stolk zijn er twee stromingen in bio-kunst. (behalve dat je ze kan onderverdelen in ontwerp en autonome kunst) “Heb je kunstenaars die een maatschappelijk commentaar geven op ontwikkelingen. Je hebt heel veel kunstwerken die met de ethische grenzen proberen te experimenteren om ze ter discussie te stellen en te vertellen hoe vreemd deze materie eigenlijk is. En de andere helft en daar geloof ik eigenlijk meer in qua belang is vorm onderzoek. Wat componeer ik hier nou mee? Ik heb bijvoorbeeld DNA en ik kan daar iets mee doen, wat kan daar dan uit komen. Wat zijn de potentiële vormen die behoren bij deze technologie en materiaal.” 10 
-</p> <p>
-Stolk omschrijft vorm onderzoek als een 'implementatie op het gebied van nieuwe potentiële vormen die kunnen bestaan met de nieuwe technologie.' Dat kan leiden tot nieuwe soort vormen. Het is een goede methodiek om de stromingen van bio-kunst te benaderen, daar in vind ik ook dat provocatie geen manier is om de maatschappij in te lichten op ontwikkelingen. Bio-kunst of bio-design wordt  dan ook door wetenschappers vaak in verband gelegd met provocerende projecten zo GFP Bunny project (2000). 
-</p> <p>
-In het veld waar ontwerp en kunst sterk in elkaar overlopen, is er ook nog een manier van verscheidenheid die afgelezen kan worden, er zijn diverse vormen, uitgangspunten en toepassingen waar een werk duidelijker naar toe trekt. Aan de hand van een analyse van 20 diverse werken (en meer) om de verscheidenheid dieper te formuleren, kunnen diverse ontwerp-uiteenzettingen en eigenschappen geconstateerd worden binnen de biotechnologie.
-</p> <p>
-"The most beautiful thing we can experience is the mysterious. It is the source of all true art 
-and scions" <br>
-– Albert Einstein
-</p> <p>
-3.4.1 Fantasie en speculatie <br>
-Om ‘te pragmatisch’ zijn te vermijden is het gebruiken en inzetten van fantasie een baanbrekende eigenschap. Ik zie het los laten van wat ‘kan’ en fantaseren over de toekomst als het meest waardevol. Wanneer men alles los kan laten, en vooral los laat waarvan hij denkt dat technisch kan worden uitgevoerd. Ontstaan er gedachtes en concepten die waarschijnlijk raakvlakken hebben met wat wel mogelijk is. Omdat die fantasie gedeeltelijk is ontstaan door het geconsigneerde geheugen van de denker. Eigenlijk komt het in bijna al het werk naar voren. Het is dan ook eerder een veel voorkomende eigenschap. Het werk Pathogen Hunter van Susana Soares bestaat uit een serie tools voor het ontdekken en observeren van infecties voor micro-organismes, die vervolgens zouden worden aangepast met 'nano-enabled sensor systems' die er voor zorgt dat de bacterie wordt opgespoord en geïndexeerd. Soares werkte samen met wetenschappers aan de Newcastle University, die verwachten dat deze techniek mogelijk is in 5 tot 10 jaar. Wat ze zich af vraagt is of ons gedrag veranderd moet worden om verspreiding van ziekteverwekkers te voorkomen en wat de sociale gevolgen daarvan zijn. 
-</p> <p>
-Het verkennen van toekomstige technieken om tot nieuwe fantasierijke concepten te komen die speculeren over mogelijkheden in de toekomst komen in het algemeen vaak naar voren. Door middel van een nieuwe techniek, zonder dat het in de huidige tijd wordt uitgevoerd. Microbial Money door Raphael Kim kijkt naar de mogelijke rollen voor technologie en micro-organismen voor het vormgeven van een sociale-economie. Dit doet ze door middel van biologische experimenten en scenario-ontwikkeling. 
-</p> <p>
-3.4.2 Innovatie <br>
-Innovatie is een begrip die onder wetenschap essentieel is. Innovatie gaat over verbetering en vernieuwing. Innovatie begint met een doel en een probleemstelling, die bij het ontwerp proces even belangrijk is maar wel op een andere frequentie wordt ontwikkeld. Innovatie wordt vaak in verband gebracht met iets wat direct werkt. Maurizio Montalti maakt met het project System Synthetics een transparante bioreactor. Een schimmel breekt plastic af en een gist maakt daar biobrandstof van. Maurizio is ontwerper, volgt een training aan de universiteit Utrecht bij de afdeling micro-biologie en is gefascineerd door de toekomstwaarde van schimmels. Het project is ontstaan als een reactie op de huidige houding van de productie en toepassing van traditionele synthetische / giftige stoffen, die veel ontwerpers en bedrijven over de hele wereld bezig houd.11 
-</p> <p>
-3.4.3 Materiaal <br> 
-Het ontwerpen of het benaderen van toekomstige materialen vormt een grote inspiratie bron in de verschijningsvorm van bio deisgn en bio kunst. Dit is wel sterker terug te zien in bio-design, dit omdat de visie wellicht meer is gebaseerd op het vinden van een toevoeging of verandering in de huidige maatschappij. Een goed voorbeeld is het werk van ontwerper Suzanne Lee waar ze experimenteert met het kweken van kombucha12 gebaseerd materiaal dat kan worden ingezet als leer of stof. Door de betrokkenheid van biologie is Susanna enthousiast over hoe we kunnen nadenken over microben als fabrieken van de toekomst. Ze gelooft dat textiel zelf levende organismen kunnen zijn die symbiotisch13 kan werken om het lichaam te voeden, en zelfs te controleren voor ziekteverschijnselen.  
-</p> <p>
-3.4.4 Schoonheid <br>
-Schoonheid en intelligentie van levende organismen is voor veel mensen spannend, een aantal ontwerpers en kunstenaars gebruiken dit als basis om het publiek kennis te laten maken met deze verassende wereld. Artist Nurit Bar-Shai gebruikt het verrassende vermogen van communicerende Paenibacillus vortex bacterie in een biologisch sculptuur. Het onderzoekt toont de beslissingen van levende organismes in beelden als een sculptuur-vorm.
-</p> <p>
-3.4.5 Wetenschap en maatschappij <br>
-De complexe wetenschap die een stuk tastbaarder word is een gevolg die sterk tot uiting komt in al het werk. De weerspiegeling van de complexe werkelijkheid die nog werkelijkheid moet worden wordt vertaald naar iets wat we begrijpen. Eigenlijk doen ze het bijna allemaal, maar de bioartist Anna Dumitriu misschien wel het meest. Ze laat met haar werk de grenzen tussen kunst en wetenschap vervagen. Ze is zeer geïnteresseerd microbiologie en alle ethische en sociale vragen die nieuwe technologieën oproepen.14 Cybernetic Bacteria is een doorlopend onderzoek die kunst, filosofie, microbiologie en de technologie bij elkaar brengt. Het onderzoek wijd zich aan de groeiende wetenschap van bacteriële communicatie en onze eigen digitale communicatie. De communicatie van bacterie en een live stream data stroom brengt ze samen in een installatie. Deze installatie verkent de complexe lagen in zowel digitale als organische communicatienetwerken en onderzoekt de relatie van bacteriën en kunstmatig leven. Bacteriën communiceren namelijk continu met elkaar, net als ons eigen digitale netwerk wat we eigenlijk nooit in de gaten hebben.
-</p> <p>
-3.6 Vragen stellen <br>
-Ontwerpers en kunstenaars roepen veel vragen op over de toekomst, de bio technische veranderingen die zullen plaatsvinden, en de invloed die het zal uit oefenen op ons bestaan. Filosoferen is van belang om de techniek die in handen is van grote bedrijven te relativeren. En nog belangrijker, de juiste vragen te stellen. Want wat willen we nou eigenlijk? 
-</p> <p>
-Synthetic Aesthetics15 is een experimenteel onderzoeks-project tussen synthetische biologie, ontwerpen, kunst en sociale wetenschappen die zich realiseert dat er vragen gesteld moeten worden. Ze zijn zich er van bewust dat synthetische biologen zoals velen engineers een connectie hebben met ‘ontwerpen’. In synthetische esthetieken vragen ze zich zelf af wat het betekent het om natuur te ontwerpen? Hoe ontwerpen we natuur en hoe ontwerpen we in het algemeen? Welke inzichten kan ontwerpen bieden in het ontwerpen van microscopische entiteiten voor de menselijke schaal van de wereld. Ze vragen zich af of de uitwisseling van kennis en ideeën in staat is de verlopen van nieuwe vormen van ambacht in samenwerkingsverband te ontwikkelen. Hoe zal de hedendaagse kunst en ontwerp vorm worden uitgedaagd bij een interactie met synthetische biologie is een interessant vraagstuk die momenteel heel dicht bij ons staat.  In het project E. Cromi onderdeel van iGEM 2014 Art and Design presenteren ze bijvoorbeeld het idee dat de kleur van onze ontlasting ziektes kan indexeren en ons waarschuwt door middel van een bacteriën die van kleur veranderd. 
-</p> <p>
-The Synthetic Kingdom door Alexandra Daisy Ginsberg uit het samenwerkingsverband is een serie van werken die kijkt naar de consequenties binnen de ontwikkelingen en het gebruik tot misbruiken van nieuwe levensvormen voor eigen doeleinden. Terwijl we momenteel afhankelijk zijn van petrochemische stoffen en edele metalen in de industrie, zijn we waarschijnlijk binnenkort in staat gewenste kenmerken van verschillende hogere organismes te vinden om de relevante stukken van het DNA te dupliceren. Om het vervolgens te synthetiseren naar een biologische behuizing, net als bacterieel DNA. Ze stelt dat als het veld van deze activiteit zich uitbreid, er misschien een nieuwe vorm aan de boom van het leven kan worden toegevoegd, namelijk de 'synthetische', dit zal dan een vierde koninkrijk worden in de stamboom van het leven16.
-</p> <p>
-3.5 Ontwerper van de toekomst <br>
-De eerste computers die rond 1985 academies binnen werden gedragen, de eerste printers die bij mensen in huis stonden, we kunnen stellen dat technieken die toegankelijker worden zich snel ontwikkelen. Wat vroeger nog een specialisatie was is nu vatbaar en handelbaar. Waar in 1999 het beroemde gen voor 'GFP Bunny van Eduardo Kac' nog 8000 dollar kosten, kan dit gen nu voor een paar honderd euro worden gemaakt. 
-</p> <p>
-In het werk ‘Design Fictions17’ van de Zimbabwaanse Natsai-Audrey Chieza wat gemaakt is voor het Textile Futures Programme gaat het over vooruit denken tussen het spanningsveld van schoonheid en technologie. Dit project richt zich op het standpunt dat de toepassingen van de ‘life science’ zullen convergeren in de 21e eeuw tot verschillende karakteriserende productiemiddelen. Deze vooruit gangen zullen volgens hem grote veranderingen brengen die langzaam zullen infiltreren bij ontwerpers, die misschien buiten ontwerpers ook wetenschappers, engineers of synthetische biologen worden om hun doel te bereiken. 
-</p> <p>
-Design Fictions presenteert een collectie van fictieve artificiële toepassingen die drie toekomst scenario's vertellen, om een discussie op gang te helpen over ethiek in wetenschap en zijn verkenningen in het leven. Het interessante is dat hij spreekt over de verwachting van een ontwerper die in 2075 in een studio annex laboratorium werkt. Waardoor mijn verwachtingen volledig onder woorden worden gebracht.  Voluntaury Multiations 1  kijkt naar de esthetische potentiële van een subcultuur in een situatie waar ‘open source do it yourself stam cel biologie’ even gewoon wordt als computer gebruik. Parasitic Protheses 2 suggereert dat het post-human lichaam genetisch kan worden gesynthetiseerd door middel van uit  'eigen bodem' parasitaire organismen, die het mogelijk maakt snel aan te passen aan veranderingen of nieuwe omgevingen. Bio-collectibles 3 introduceert een vraag over de ethiek van de zorgwekkende markt voor genetisch materiaal waarbij ons lichaam kan worden gezien als boerderijen. Natsai balanceert hier op een superieure manier tussen ontwerp, toekomst visie, fantasie en de mogelijkheden voor de toekomst in. Hij belicht een bewustwording van de eventuele veranderingen die bij de rol van een ontwerper horen. 
-</p> <p>
-3.7 Samenwerking en kennis. <br>
-Zoals Einstein beschrijft, dat iedereen met zijn eigen verbeelding een eigen verbeelding van de wereld maakt dat leidt tot ideeën en concepten. Kan worden gezegd dat dit perspectief ook op kennis is toe te passen. Het perspectief die wij voor ons zelf creëren zorgt er voor dat we met die kennis of ervaring dingen kunnen bedenken. Die ideeën kunnen pas tot uiting komen op het moment dat een ontwerper een fundamentele basis heeft. Deze fundamentele basis gaat gepaard door zijn referenties, interesse, doorzettingsvermogen en lef. Iedereen heeft op de rand gestaan van nieuwe technieken die hij moet gaan verkennen. Het verschil bij nieuwe technieken is dat het om enkele spelers gaat. Terwijl het bij betrouwbare technieken gaat om het verwachtingspatroon. Zo als van een grafisch ontwerpers wordt verwacht een computer te kunnen bedienen. Alleen zij die zich willen verdiepen in de technieken van biotechnologie zullen enige moeite moeten doen om deze materie te verkennen om vervolgens door middel van experiment het te kunnen begrijpen. Natuurlijk kan een ontwerper wanneer hij een experiment of idee wil uitwerken niet alles alleen, zo als al aangegeven dient er interesse te zijn om een idee een mening te vormen. De werken zijn dan ook vaak in samenwerking met instituten of universiteiten uitgevoerd.  Er zijn diverse plaatsen waar deze disciplines samen komen, omdat we met z’n allen wel inzien dat dit goed werkt. Maar dit blijft meestal gescheiden op bedrijfsmatig niveau. 
-</p> <p>
-“De samenwerking van onderzoekers en kunstenaars kan veel creativiteit opleveren. Er zou een instituut moeten komen waar nieuwe, interessante dingen worden ontwikkeld. Dingen die wetenschappers onder elkaar niet bedenken, omdat ze de vrijheid en creativiteit van kunstenaars missen. En die kunstenaars op hun eentje niet kunnen uitvoeren, omdat ze daarvoor de wetenschappelijke discipline en technische kennis niet hebben”18 <br>
-– Joris Laarman
-</p> <p>
-3.8 Fascinatie <br>
-Waar komt de fascinatie voor biotechnologie bij kunstenaars en ontwerpers vandaan? Het ontwerpen met levend materiaal zal sowieso voor een ontastbare vorm van spanning zorgen. We hebben het over intelligent materiaal met een eigen wil en een eigen code. Een eigen doel en een eigen eigenschap. De spanning die je hebt wanneer je niet weet wat er gaat gebeuren. De spanning die je voelt bij een eerste afspraak met iemand die je niet zo goed kent, waarbij je ook maar gedeeltelijke informatie hebt die er voor zorgt dat er verschillende scenario’s ontstaan. Spanning gaat samen met het mysterie. Kunstenaars, ontwerpers en wetenschappers zijn beiden op zoek naar het verkennen van een mysterie. Ingrid Nijhoff grafisch ontwerper die in haar vrije tijd bacteriën kweekt voor inkt zegt: ‘Het is spannend en frustrerend. Als je speelt met de natuur, weet je nooit wat je krijgt.’19
-</p> 
+                3.1 Wat is bio-kunst? <br>
+                Ofschoon experimenten zoals klonen en andere genetische manipulaties van dieren in de biologie worden al vrij lang gedaan, is kunst die met biologisch materiaal werkt pas goed op gang gekomen in de jaren negentig van de vorige eeuw (Anker & Nelkin 2004). Waar in 2005 nog iedereen refereerde aan het groene konijn, kunnen we nu spreken over een breder scala aan betrokkenen. Volgens Taco Stolk docent studierichting Art Scince aan de KABK is bio-kunst hot onder de studenten. Er wordt zelfs les gegeven in de basis principes van biotechnologie.
+                Bio-kunst is een kunst praktijk waar mensen zo als kunstenaars, architecten of ontwerpers werken met levende weefsels, bacteriën, levende organismen en leef processen. Met behulp van wetenschappelijke processen zoals biotechnologie worden de kunstwerken gemaakt in laboratoria, galerieën, of studio's. De omvang BioArt wordt door sommige kunstenaars beperkt tot enkel "levende vormen", terwijl andere kunstenaars het beeld van de hedendaagse genetische technologie toevoegen, of vereisten als adresseren van controverse blinde vlekken in het karakter van levenswetenschappen toevoegen aan de term. Het is dan ook een begrip wat op verschillende manieren geïnterpreteerd kan worden. 
+                </p> <p>
+                3.2 Maatstaven en algemene interpretatie<br> 
+                Wanneer is kunst bio-kunst? Welke criteria zijn daar aan verbonden en hoe worden die beschreven. Uit het onderzoek 'Wetenschap en kunst in dialoog. Hanssen, L. Sleenhoff, S. Stolk, S3' wordt gesproken over drie soorten bio-kunst. Een eerste maatstaf voor bio-kunst dat in het onderzoek naar voren komt; ‘is dat er basisprincipes uit de genetica ten grondslag liggen.’ Dit betekend dat een bio-kunstwerk niet alleen uit ‘levend-dna’ gemaakt hoeft te zijn. Het kan ook geschilderd zijn of uit glas bestaan. ‘Deze norm heeft meer betrekking op het concept die de kunstenaar wil vertellen. De ideeën waaruit het kunstwerk is ontstaan, komen uit de genetica of het genomicsonderzoek4’ Vervolgens wordt er gesproken over een tweede vorm waarbij daadwerkelijk levend dna in het kunstwerk is verwerkt. Deze norm relateert zich meer aan het tot stand komen van het werk. Hierbij is het maken van bio-kunst een experiment met gebruikmaking van wetenschappelijke methoden door de kunstenaar. Binnen de wettelijk geldende regels, maar buiten de richtlijnen van het wetenschappelijke domein kan de kunstenaar spelen met de mogelijkheden van de technieken in de genomics en biotechnologie5. Voor beide manieren het noodzakelijk dat kunstenaars zich vooraf verdiepen in de materie van biotechnologie en genomics (Sleenhoff, 2005). Vervolgens wordt besproken dat Natuurwetenschappers uit eindelijk met nog een derde beoordelingsvorm van bio-kunst komen. En deze norm komt mij irriterend genoeg bekend voor. Zij stellen dat het beeld brengen uit de wetenschap, biotechnologie of microbiologie ook kunst is. Dat kan een afbeelding zijn van een eiwitstructuur of een dna -molecuul.6 Het zou dan gebaseerd zijn op letterlijke verbeelding. Hoewel er door natuurwetenschappers wordt gesproken over een artistieke vrijheid staat het meer in dienst van de wetenschap. Het zou een vorm kunnen zijn die door de wetenschap wordt gezien als het illustreren van de wetenschap naar de maatschappij. Dit kwam ook sterk naar voren in interviews. Volgens (Sleenhof, 2005) dienen Bio-kunstwerken evenwel niet te worden ingezet als pr -instrument. Er kan dus volgens het onderzoek worden gesproken over bio-kunst als ten minste één van de volgende drie omschrijvingen wordt voldaan. ‘Ten eerste dat de kunst is gebaseerd op genetische principes. Ten tweede dat er DNA in het kunstwerk is verwerkt. Ten derde dat het kunst is waarbij biotechnologie of genomics in beeld wordt gebracht.’ Aldus het onderzoek. De diverse omschrijvingen zorgen wellicht voor verwarring, het kan dan ook divers worden geïnterpreteerd en het is stevig genoeg om eigen identiteiten te behouden. Er wordt in de beschouwing van bio-kunst onderhandeld over de betekenis van verschillende gezichtspunten en hoe die zich ten opzichte van elkaar verhouden.7
+                </p> <p>
+                3.3 Maar wat is dan Bio-design ? <br>
+                De bio-design is een conceptueel huidige industrieel ontwerp gelanceerd door Luigi Colani al de 1960 De aanpak wil voortbouwen op de technische oplossingen die worden aangeboden door de natuur aan de industriële objecten ontwerpproblemen te voldoen.
+                </p> <p>
+                Als het grensgebied tussen kunst en ontwerpen een vervaagd gebied is kan worden gezegd dat bio-design enkele hiervoor beschreven overeenkomsten draagt. Wellicht zijn de toepassingen in Bio Design eerder gerelateerd aan toepassingen waarbij toekomstige functionaliteit in beeld wordt gebracht.  In het boek ‘Bio Design Nature Science and Creatifity’ selecteerde William Myers 50 werken waarbij levend materiaal een onderdeel vormen van het ontwerp. De werken introduceren visionaire strategieën voor het verbeteren van de ecologische prestaties van de objecten en gebouwen om ons heen. Het zijn esthetische mogelijkheden die mogelijk worden gemaakt door nieuwe biotechnische en provocerende experimenten die zowel kansen en gevaren stelt in het manipulerende leven voor menselijke doeleinden. Bio-design wordt ook omschreven als een ontwerp of fabricage die na-biologie geïnspireerde benadering is ontworpen. In tegenstelling tot biomimetica8, Cradle to Clradle9 of de populaire frustrerende term als "groen ontwerp" verwijst bio-design naar levende organismes als een essentieel onderdeel in het ontwerp. Bio-design verwijst ook naar experimenten voor toekomstige industriële mechanische systemen met biologisch proces. Na functioneel en speculatief ontwerp is de laatste selectie van het boek geweid aan hedendaagse kunst. Een presentatie van een aantal werken dat levend materiaal integreren en veranderingen voorspellen in hoe we leven of wat natuurlijk is in de nabije toekomst zou kunnen definiëren. Bio-design is niet alleen terug te vinden in het boek van Meyers, er is een uiteenlopend scala aan ontwerpers, architecten en kunstenaars die zich verkennen in biotechnologie. Daarbij wordt elk jaar een Bio Art & Design Award uitgereikt die jonge kunstenaars en ontwerpers stimuleert om de wereld van bio-kunst en bio-design te ontdekken en verder te ontwikkelen. 
+                </p> <p>
+                3.4 Benaderingen<br>
+                Volgens Taco Stolk zijn er twee stromingen in bio-kunst. (behalve dat je ze kan onderverdelen in ontwerp en autonome kunst) “Heb je kunstenaars die een maatschappelijk commentaar geven op ontwikkelingen. Je hebt heel veel kunstwerken die met de ethische grenzen proberen te experimenteren om ze ter discussie te stellen en te vertellen hoe vreemd deze materie eigenlijk is. En de andere helft en daar geloof ik eigenlijk meer in qua belang is vorm onderzoek. Wat componeer ik hier nou mee? Ik heb bijvoorbeeld DNA en ik kan daar iets mee doen, wat kan daar dan uit komen. Wat zijn de potentiële vormen die behoren bij deze technologie en materiaal.” 10 
+                </p> <p>
+                Stolk omschrijft vorm onderzoek als een 'implementatie op het gebied van nieuwe potentiële vormen die kunnen bestaan met de nieuwe technologie.' Dat kan leiden tot nieuwe soort vormen. Het is een goede methodiek om de stromingen van bio-kunst te benaderen, daar in vind ik ook dat provocatie geen manier is om de maatschappij in te lichten op ontwikkelingen. Bio-kunst of bio-design wordt  dan ook door wetenschappers vaak in verband gelegd met provocerende projecten zo GFP Bunny project (2000). 
+                </p> <p>
+                In het veld waar ontwerp en kunst sterk in elkaar overlopen, is er ook nog een manier van verscheidenheid die afgelezen kan worden, er zijn diverse vormen, uitgangspunten en toepassingen waar een werk duidelijker naar toe trekt. Aan de hand van een analyse van 20 diverse werken (en meer) om de verscheidenheid dieper te formuleren, kunnen diverse ontwerp-uiteenzettingen en eigenschappen geconstateerd worden binnen de biotechnologie.
+                </p> <p>
+                "The most beautiful thing we can experience is the mysterious. It is the source of all true art 
+                and scions" <br>
+                – Albert Einstein
+                </p> <p>
+                3.4.1 Fantasie en speculatie <br>
+                Om ‘te pragmatisch’ zijn te vermijden is het gebruiken en inzetten van fantasie een baanbrekende eigenschap. Ik zie het los laten van wat ‘kan’ en fantaseren over de toekomst als het meest waardevol. Wanneer men alles los kan laten, en vooral los laat waarvan hij denkt dat technisch kan worden uitgevoerd. Ontstaan er gedachtes en concepten die waarschijnlijk raakvlakken hebben met wat wel mogelijk is. Omdat die fantasie gedeeltelijk is ontstaan door het geconsigneerde geheugen van de denker. Eigenlijk komt het in bijna al het werk naar voren. Het is dan ook eerder een veel voorkomende eigenschap. Het werk Pathogen Hunter van Susana Soares bestaat uit een serie tools voor het ontdekken en observeren van infecties voor micro-organismes, die vervolgens zouden worden aangepast met 'nano-enabled sensor systems' die er voor zorgt dat de bacterie wordt opgespoord en geïndexeerd. Soares werkte samen met wetenschappers aan de Newcastle University, die verwachten dat deze techniek mogelijk is in 5 tot 10 jaar. Wat ze zich af vraagt is of ons gedrag veranderd moet worden om verspreiding van ziekteverwekkers te voorkomen en wat de sociale gevolgen daarvan zijn. 
+                </p> <p>
+                Het verkennen van toekomstige technieken om tot nieuwe fantasierijke concepten te komen die speculeren over mogelijkheden in de toekomst komen in het algemeen vaak naar voren. Door middel van een nieuwe techniek, zonder dat het in de huidige tijd wordt uitgevoerd. Microbial Money door Raphael Kim kijkt naar de mogelijke rollen voor technologie en micro-organismen voor het vormgeven van een sociale-economie. Dit doet ze door middel van biologische experimenten en scenario-ontwikkeling. 
+                </p> <p>
+                3.4.2 Innovatie <br>
+                Innovatie is een begrip die onder wetenschap essentieel is. Innovatie gaat over verbetering en vernieuwing. Innovatie begint met een doel en een probleemstelling, die bij het ontwerp proces even belangrijk is maar wel op een andere frequentie wordt ontwikkeld. Innovatie wordt vaak in verband gebracht met iets wat direct werkt. Maurizio Montalti maakt met het project System Synthetics een transparante bioreactor. Een schimmel breekt plastic af en een gist maakt daar biobrandstof van. Maurizio is ontwerper, volgt een training aan de universiteit Utrecht bij de afdeling micro-biologie en is gefascineerd door de toekomstwaarde van schimmels. Het project is ontstaan als een reactie op de huidige houding van de productie en toepassing van traditionele synthetische / giftige stoffen, die veel ontwerpers en bedrijven over de hele wereld bezig houd.11 
+                </p> <p>
+                3.4.3 Materiaal <br> 
+                Het ontwerpen of het benaderen van toekomstige materialen vormt een grote inspiratie bron in de verschijningsvorm van bio deisgn en bio kunst. Dit is wel sterker terug te zien in bio-design, dit omdat de visie wellicht meer is gebaseerd op het vinden van een toevoeging of verandering in de huidige maatschappij. Een goed voorbeeld is het werk van ontwerper Suzanne Lee waar ze experimenteert met het kweken van kombucha12 gebaseerd materiaal dat kan worden ingezet als leer of stof. Door de betrokkenheid van biologie is Susanna enthousiast over hoe we kunnen nadenken over microben als fabrieken van de toekomst. Ze gelooft dat textiel zelf levende organismen kunnen zijn die symbiotisch13 kan werken om het lichaam te voeden, en zelfs te controleren voor ziekteverschijnselen.  
+                </p> <p>
+                3.4.4 Schoonheid <br>
+                Schoonheid en intelligentie van levende organismen is voor veel mensen spannend, een aantal ontwerpers en kunstenaars gebruiken dit als basis om het publiek kennis te laten maken met deze verassende wereld. Artist Nurit Bar-Shai gebruikt het verrassende vermogen van communicerende Paenibacillus vortex bacterie in een biologisch sculptuur. Het onderzoekt toont de beslissingen van levende organismes in beelden als een sculptuur-vorm.
+                </p> <p>
+                3.4.5 Wetenschap en maatschappij <br>
+                De complexe wetenschap die een stuk tastbaarder word is een gevolg die sterk tot uiting komt in al het werk. De weerspiegeling van de complexe werkelijkheid die nog werkelijkheid moet worden wordt vertaald naar iets wat we begrijpen. Eigenlijk doen ze het bijna allemaal, maar de bioartist Anna Dumitriu misschien wel het meest. Ze laat met haar werk de grenzen tussen kunst en wetenschap vervagen. Ze is zeer geïnteresseerd microbiologie en alle ethische en sociale vragen die nieuwe technologieën oproepen.14 Cybernetic Bacteria is een doorlopend onderzoek die kunst, filosofie, microbiologie en de technologie bij elkaar brengt. Het onderzoek wijd zich aan de groeiende wetenschap van bacteriële communicatie en onze eigen digitale communicatie. De communicatie van bacterie en een live stream data stroom brengt ze samen in een installatie. Deze installatie verkent de complexe lagen in zowel digitale als organische communicatienetwerken en onderzoekt de relatie van bacteriën en kunstmatig leven. Bacteriën communiceren namelijk continu met elkaar, net als ons eigen digitale netwerk wat we eigenlijk nooit in de gaten hebben.
+                </p> <p>
+                3.6 Vragen stellen <br>
+                Ontwerpers en kunstenaars roepen veel vragen op over de toekomst, de bio technische veranderingen die zullen plaatsvinden, en de invloed die het zal uit oefenen op ons bestaan. Filosoferen is van belang om de techniek die in handen is van grote bedrijven te relativeren. En nog belangrijker, de juiste vragen te stellen. Want wat willen we nou eigenlijk? 
+                </p> <p>
+                Synthetic Aesthetics15 is een experimenteel onderzoeks-project tussen synthetische biologie, ontwerpen, kunst en sociale wetenschappen die zich realiseert dat er vragen gesteld moeten worden. Ze zijn zich er van bewust dat synthetische biologen zoals velen engineers een connectie hebben met ‘ontwerpen’. In synthetische esthetieken vragen ze zich zelf af wat het betekent het om natuur te ontwerpen? Hoe ontwerpen we natuur en hoe ontwerpen we in het algemeen? Welke inzichten kan ontwerpen bieden in het ontwerpen van microscopische entiteiten voor de menselijke schaal van de wereld. Ze vragen zich af of de uitwisseling van kennis en ideeën in staat is de verlopen van nieuwe vormen van ambacht in samenwerkingsverband te ontwikkelen. Hoe zal de hedendaagse kunst en ontwerp vorm worden uitgedaagd bij een interactie met synthetische biologie is een interessant vraagstuk die momenteel heel dicht bij ons staat.  In het project E. Cromi onderdeel van iGEM 2014 Art and Design presenteren ze bijvoorbeeld het idee dat de kleur van onze ontlasting ziektes kan indexeren en ons waarschuwt door middel van een bacteriën die van kleur veranderd. 
+                </p> <p>
+                The Synthetic Kingdom door Alexandra Daisy Ginsberg uit het samenwerkingsverband is een serie van werken die kijkt naar de consequenties binnen de ontwikkelingen en het gebruik tot misbruiken van nieuwe levensvormen voor eigen doeleinden. Terwijl we momenteel afhankelijk zijn van petrochemische stoffen en edele metalen in de industrie, zijn we waarschijnlijk binnenkort in staat gewenste kenmerken van verschillende hogere organismes te vinden om de relevante stukken van het DNA te dupliceren. Om het vervolgens te synthetiseren naar een biologische behuizing, net als bacterieel DNA. Ze stelt dat als het veld van deze activiteit zich uitbreid, er misschien een nieuwe vorm aan de boom van het leven kan worden toegevoegd, namelijk de 'synthetische', dit zal dan een vierde koninkrijk worden in de stamboom van het leven16.
+                </p> <p>
+                3.5 Ontwerper van de toekomst <br>
+                De eerste computers die rond 1985 academies binnen werden gedragen, de eerste printers die bij mensen in huis stonden, we kunnen stellen dat technieken die toegankelijker worden zich snel ontwikkelen. Wat vroeger nog een specialisatie was is nu vatbaar en handelbaar. Waar in 1999 het beroemde gen voor 'GFP Bunny van Eduardo Kac' nog 8000 dollar kosten, kan dit gen nu voor een paar honderd euro worden gemaakt. 
+                </p> <p>
+                In het werk ‘Design Fictions17’ van de Zimbabwaanse Natsai-Audrey Chieza wat gemaakt is voor het Textile Futures Programme gaat het over vooruit denken tussen het spanningsveld van schoonheid en technologie. Dit project richt zich op het standpunt dat de toepassingen van de ‘life science’ zullen convergeren in de 21e eeuw tot verschillende karakteriserende productiemiddelen. Deze vooruit gangen zullen volgens hem grote veranderingen brengen die langzaam zullen infiltreren bij ontwerpers, die misschien buiten ontwerpers ook wetenschappers, engineers of synthetische biologen worden om hun doel te bereiken. 
+                </p> <p>
+                Design Fictions presenteert een collectie van fictieve artificiële toepassingen die drie toekomst scenario's vertellen, om een discussie op gang te helpen over ethiek in wetenschap en zijn verkenningen in het leven. Het interessante is dat hij spreekt over de verwachting van een ontwerper die in 2075 in een studio annex laboratorium werkt. Waardoor mijn verwachtingen volledig onder woorden worden gebracht.  Voluntaury Multiations 1  kijkt naar de esthetische potentiële van een subcultuur in een situatie waar ‘open source do it yourself stam cel biologie’ even gewoon wordt als computer gebruik. Parasitic Protheses 2 suggereert dat het post-human lichaam genetisch kan worden gesynthetiseerd door middel van uit  'eigen bodem' parasitaire organismen, die het mogelijk maakt snel aan te passen aan veranderingen of nieuwe omgevingen. Bio-collectibles 3 introduceert een vraag over de ethiek van de zorgwekkende markt voor genetisch materiaal waarbij ons lichaam kan worden gezien als boerderijen. Natsai balanceert hier op een superieure manier tussen ontwerp, toekomst visie, fantasie en de mogelijkheden voor de toekomst in. Hij belicht een bewustwording van de eventuele veranderingen die bij de rol van een ontwerper horen. 
+                </p> <p>
+                3.7 Samenwerking en kennis. <br>
+                Zoals Einstein beschrijft, dat iedereen met zijn eigen verbeelding een eigen verbeelding van de wereld maakt dat leidt tot ideeën en concepten. Kan worden gezegd dat dit perspectief ook op kennis is toe te passen. Het perspectief die wij voor ons zelf creëren zorgt er voor dat we met die kennis of ervaring dingen kunnen bedenken. Die ideeën kunnen pas tot uiting komen op het moment dat een ontwerper een fundamentele basis heeft. Deze fundamentele basis gaat gepaard door zijn referenties, interesse, doorzettingsvermogen en lef. Iedereen heeft op de rand gestaan van nieuwe technieken die hij moet gaan verkennen. Het verschil bij nieuwe technieken is dat het om enkele spelers gaat. Terwijl het bij betrouwbare technieken gaat om het verwachtingspatroon. Zo als van een grafisch ontwerpers wordt verwacht een computer te kunnen bedienen. Alleen zij die zich willen verdiepen in de technieken van biotechnologie zullen enige moeite moeten doen om deze materie te verkennen om vervolgens door middel van experiment het te kunnen begrijpen. Natuurlijk kan een ontwerper wanneer hij een experiment of idee wil uitwerken niet alles alleen, zo als al aangegeven dient er interesse te zijn om een idee een mening te vormen. De werken zijn dan ook vaak in samenwerking met instituten of universiteiten uitgevoerd.  Er zijn diverse plaatsen waar deze disciplines samen komen, omdat we met z’n allen wel inzien dat dit goed werkt. Maar dit blijft meestal gescheiden op bedrijfsmatig niveau. 
+                </p> <p>
+                “De samenwerking van onderzoekers en kunstenaars kan veel creativiteit opleveren. Er zou een instituut moeten komen waar nieuwe, interessante dingen worden ontwikkeld. Dingen die wetenschappers onder elkaar niet bedenken, omdat ze de vrijheid en creativiteit van kunstenaars missen. En die kunstenaars op hun eentje niet kunnen uitvoeren, omdat ze daarvoor de wetenschappelijke discipline en technische kennis niet hebben”18 <br>
+                – Joris Laarman
+                </p> <p>
+                3.8 Fascinatie <br>
+                Waar komt de fascinatie voor biotechnologie bij kunstenaars en ontwerpers vandaan? Het ontwerpen met levend materiaal zal sowieso voor een ontastbare vorm van spanning zorgen. We hebben het over intelligent materiaal met een eigen wil en een eigen code. Een eigen doel en een eigen eigenschap. De spanning die je hebt wanneer je niet weet wat er gaat gebeuren. De spanning die je voelt bij een eerste afspraak met iemand die je niet zo goed kent, waarbij je ook maar gedeeltelijke informatie hebt die er voor zorgt dat er verschillende scenario’s ontstaan. Spanning gaat samen met het mysterie. Kunstenaars, ontwerpers en wetenschappers zijn beiden op zoek naar het verkennen van een mysterie. Ingrid Nijhoff grafisch ontwerper die in haar vrije tijd bacteriën kweekt voor inkt zegt: ‘Het is spannend en frustrerend. Als je speelt met de natuur, weet je nooit wat je krijgt.’19
+                </p> 
         </div>
+    </div>
+ 
 
+
+
+
+        </div>
+        
+    </div>
         
            
               
-             
+    <script type="text/javascript">
+        var mauPlus = document.getElementById('mauPlus');
+        
+        var videoDing = document.getElementById('bgvid');
+        var mainText = document.getElementById('alles');
+
+        var clickCount = 5 ;
+        var clickCountCurrent = 0;
+
+        var mainTextBlur = clickCount;
+        mainText.style.WebkitFilter = 'blur('+mainTextBlur+'px)';
+        
+        var videoBlur = 0;
+        videoDing.style.WebkitFilter = 'blur('+videoBlur+'px)';
+
+
+        mauPlus.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            if(clickCountCurrent < clickCount) {
+                mainTextBlur--;
+                videoBlur++;
+            } else {
+                mainTextBlur++;
+                videoBlur--;
+            }
+            
+            mainText.style.WebkitFilter = 'blur('+mainTextBlur+'px)';
+            videoDing.style.WebkitFilter = 'blur('+videoBlur+'px)';
+
+            // debug
+            // console.log('mainTextBlur: blur('+mainTextBlur+'px) clickCountCurrent: ' + clickCountCurrent + ' videoBlur: blur('+videoBlur+'px)');
+
+            clickCountCurrent++;
+            if(clickCountCurrent == clickCount*2) {
+                clickCountCurrent = 0
+            }
+        })
+
+    </script>
     </body>
 </html>
 
