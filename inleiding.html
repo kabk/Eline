@@ -11,29 +11,59 @@
                 /*-webkit-filter: blur(7px);*/
             }
         </style>
+                <script src="jquery.min.js"></script>
+            <script>
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
+
+            $(document).ready(function(){
+              $(".navclick").click(function(){
+                $("nav").slideToggle(600);
+              });
+            });
+
+        </script> 
     </head>
     <body>
-        <a href="#" id="mauPlus">scherupstelle</a>
+        <a href="#" id="mauPlus" style="-webkit-filter: blur(0px) !important;">scherupstelle</a>
+        
         <video autoplay loop id="bgvid">
-        <source src="video/bacteriaspirillum.mp4" type="video/mp4">
+        <source src="video/groeiesn.mp4" type="video/mp4">
         </video>
+        
+        <div  id="alles">
+            <nav>
+                <ul><li><a href="abstract.html">abstract</a></li>
+                    <li><a href="index.html">voorwoord</a></li>
+                    <li><a href="inleiding.html">inleiding</a></li>
+                    <li><a href="hoofdstuk1.html">Een onzichtbare wereld</a></li>
+                    <li><a href="hoofdstuk2.html">Wat wordt er ontworpen binnen de biotechnologie?</a></li>
+                    <li><a href="hoofdstuk3.html">Ontwerpers en biotechnologie? </a></li>
+                    <li><a href="hoofdstuk4.html">Ontwerpen, kunst en technologie in dialoog</a></li>
+                    <li><a href="conclussie.html">conclussie</a></li>
+                    <br>
+                    <li><a href="bronnen.html">bronnen</a></li>
+                    <li><a href="interviews.html">interviews</a></li>
+                </ul>
+            </nav>
 
-        <nav>
-            <ul><li><a href="abstract.html">abstract</a></li>
-                <li><a href="index.html">voorwoord</a></li>
-                <li><a href="inleiding.html">inleiding</a></li>
-                <li><a href="hoofdstuk1.html">hoofdstuk 1</a></li>
-                <li><a href="hoofdstuk2.html">hoofdstuk 2</a></li>
-                <li><a href="hoofdstuk3.html">hoofdstuk 3</a></li>
-                <li><a href="hoofdstuk4.html">hoofdstuk 4</a></li>
-                <li><a href="conclussie.html">conclussie</a></li>
-                <br>
-                <li><a href="bronnen.html">bronnen</a></li>
-                <li><a href="interviews.html">interviews</a></li>
-            </ul>
-               </nav>
+        <div class="navclick">
+            <a>Navigatie</a>
+        </div>
+        
         <div id="icoontjeRechts">
-            <a href="#dikke_drol1"><img src="image/trash.gif"   alt="" /></a> <br />
             <a href="#dikke_drol2"><img src="image/plus.gif"    alt="" /></a> <br />
             <a href="#dikke_drol3"><img src="image/down.gif"    alt="" /></a> <br />
             <a href="#dikke_drol3"><img src="image/print.gif"   alt="" /></a> <br />
@@ -59,7 +89,7 @@
             <br> 
         </div>
         
-
+    </div>
         
            
               
@@ -67,9 +97,9 @@
         var mauPlus = document.getElementById('mauPlus');
         
         var videoDing = document.getElementById('bgvid');
-        var mainText = document.getElementById('tekstbox');
+        var mainText = document.getElementById('alles');
 
-        var clickCount = 15;
+        var clickCount = 10;
         var clickCountCurrent = 0;
 
         var mainTextBlur = clickCount;
