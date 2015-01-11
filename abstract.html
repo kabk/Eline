@@ -3,37 +3,80 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Naamloos document</title>
+        <title>abstract</title>
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <style type="text/css">
+            div#tekstbox {
+                /*-webkit-filter: blur(7px);*/
+            }
+        </style>
+                <script src="jquery.min.js"></script>
+            <script>
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
+
+            $(document).ready(function(){
+              $(".navclick").click(function(){
+                $("nav").slideToggle(600);
+              });
+            });
+
+        </script> 
     </head>
     <body>
-        <nav>
-            <ul><li><a href="abstract.html">abstract</a></li>
-                <li><a href="index.html">voorwoord</a></li>
-                <li><a href="inleiding.html">inleiding</a></li>
-                <li><a href="hoofdstuk1.html">hoofdstuk 1</a></li>
-                <li><a href="hoofdstuk2.html">hoofdstuk 2</a></li>
-                <li><a href="hoofdstuk3.html">hoofdstuk 3</a></li>
-                <li><a href="hoofdstuk4.html">hoofdstuk 4</a></li>
-                <li><a href="conclussie.html">conclussie</a></li>
-                <br>
-                <li><a href="bronnen.html">bronnen</a></li>
-                <li><a href="interviews.html">interviews</a></li>
-            </ul>
-        </nav>
-        <div id="icoontjeRechts">
-            <a href="#dikke_drol1"><img src="image/trash.gif"   alt="" /></a> <br />
-            <a href="#dikke_drol2"><img src="image/plus.gif"    alt="" /></a> <br />
-            <a href="#dikke_drol3"><img src="image/down.gif"    alt="" /></a> <br />
-            <a href="#dikke_drol3"><img src="image/print.gif"   alt="" /></a> <br />
+        
+        <div id="plusje"> 
+            <a href="#" id="mauPlus" style="-webkit-filter: blur(0px) !important; z-index: 9999; right: 10%; top: 40%; position: fixed;">
+                <img src="image/plus.gif" alt="" /> 
+            </a>
         </div>
+        
+        <video autoplay loop id="bgvid" poster="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+        <source src="video/Sequeynce 07.mp4" type="video/mp4">
+
+        </video>
+        
+        <div  id="alles">
+            <nav>
+                <ul><li><a href="abstract.html">abstract</a></li>
+                    <li><a href="index.html">voorwoord</a></li>
+                    <li><a href="inleiding.html">inleiding</a></li>
+                    <li><a href="hoofdstuk1.html">Een onzichtbare wereld</a></li>
+                    <li><a href="hoofdstuk2.html">Wat wordt er ontworpen binnen de biotechnologie?</a></li>
+                    <li><a href="hoofdstuk3.html">Ontwerpers en biotechnologie? </a></li>
+                    <li><a href="hoofdstuk4.html">Ontwerpen, kunst en technologie in dialoog</a></li>
+                    <li><a href="conclusie.html">conclussie</a></li>
+                    <li><a href="bronnen.html">bronnen</a></li>
+                    <li><a href="interviews.html">interviews</a></li>
+                </ul>
+            </nav>
+
+        <div class="navclick">
+            <a>Navigatie</a>
+        </div>
+        
+         <!-- <div id="icoontjeRechts">
+            <a href="#dikke_drol2"><img src="image/plus.gif"    alt="" /></a> <br />
+        </div> -->
+        
         <!-- <a href="oudetekst.html"> <a href="oudetekst.html"> <div id="trash"> </div> </a> -->
         <div id="tekstbox">
-        <h1> Abstract<br>
-        Designed Microbes </h1>
+        <h1> Designed Microbes </h1>
 
-            <p>
+        <p>
             Designers are no longer just designers but also researchers. Designers, artists and scientists are working closer together and are both looking for new materials and possibilities. Biotechnology and micro-organisms form a major inspiration for multidisciplinary disciplines which also include designers and artists. 
             My research is dedicated to this question: how valuable and influential can be designers in the complex area of biotechnology where they worked with micro-organisms?
             </p><p>
@@ -51,15 +94,53 @@
             It is important for the designer and scientists to both talk in the same language, this is one of the hardest issues right now. Acting on rationality and emotion is important to reflect and ask questions in a changing technological and cultural context. 
             </p><p>
             The question that remains in my mind is if 2075 is the future where designers could work in studios annex laboratories?
- 
-
-
+        </p>
         </div>
-
+        
+    </div>
         
            
               
-             
+    <script type="text/javascript">
+        var mauPlus = document.getElementById('mauPlus');
+        
+        var videoDing = document.getElementById('bgvid');
+        var mainText = document.getElementById('alles');
+
+        var clickCount = 12;
+        var clickCountCurrent = 0;
+
+        var mainTextBlur = clickCount;
+        mainText.style.WebkitFilter = 'blur('+mainTextBlur+'px)';
+        
+        var videoBlur = 0;
+        videoDing.style.WebkitFilter = 'blur('+videoBlur+'px)';
+
+
+        mauPlus.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            if(clickCountCurrent < clickCount) {
+                mainTextBlur--;
+                videoBlur++;
+            } else {
+                mainTextBlur++;
+                videoBlur--;
+            }
+            
+            mainText.style.WebkitFilter = 'blur('+mainTextBlur+'px)';
+            videoDing.style.WebkitFilter = 'blur('+videoBlur+'px)';
+
+            // debug
+            // console.log('mainTextBlur: blur('+mainTextBlur+'px) clickCountCurrent: ' + clickCountCurrent + ' videoBlur: blur('+videoBlur+'px)');
+
+            clickCountCurrent++;
+            if(clickCountCurrent == clickCount*2) {
+                clickCountCurrent = 0
+            }
+        })
+
+    </script>
     </body>
 </html>
 

@@ -49,9 +49,9 @@ h3 {
 h2 {
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
-	font-size: 20px;
-	line-height: 28px;
+	font-size: 140px;
 	font-weight: 300;
+	text-align: center;
 }
 
 h1 {
@@ -60,6 +60,30 @@ h1 {
 	font-size: 40px;
 	font-weight: 600;
 	letter-spacing: 2px;
+}
+
+h1#h101 {
+	color: blue;
+}
+
+h4 {
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	font-size: 12px;
+	letter-spacing: 3px;
+	color: transparent;
+	text-shadow: 0 0 3px #000;
+	text-align: center;
+}
+
+blockquote {
+	font-family: ‘Metrophobic’, Arial, serif; 
+	font-weight: 400; 
+	text-decoration: none;
+	font-size: 20px;
+	font-style: italic;
+	letter-spacing: 2px;
+	color: blue;
 }
 
 p {
@@ -72,6 +96,25 @@ p {
 	font-weight: 200;
 	line-height: 20px;
 }
+
+p#p01 {
+
+    color:blue;
+}
+
+h5 {
+	font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-align: center;  
+    position: relative;
+	font-style: italic;
+	margin-right: 5%;
+	margin-right: 5%;
+	margin-bottom: 5%
+}
+
+
 
 #tekstbox {
 	width: 50%;
@@ -100,10 +143,11 @@ nav {
     width: 200px;
     float: left;
     margin-left: 0;
-    top: 5%;
+    margin-top: 40px;
     text-decoration: none;
 	padding-left: 7%;
 	display: none;
+	position: fixed;
     
 }
 
@@ -115,6 +159,7 @@ nav ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+
 }
 nav ul li {
 	padding: 3px 3px 0px;
@@ -128,7 +173,7 @@ nav ul li {
     float: left;
     margin-left: 0;
     
-    top: 5%;
+    top: 40%;
     text-decoration: none;
 	padding-left: 5%;
     list-style: none;
@@ -169,4 +214,42 @@ div#plusje {
 div#Plusje img {
 	margin-bottom: 10px;
 	width: 50%;
+}
+
+
+div#eline {
+	margin-top: 30%;
+	text-align: center;
+	height: 760px;
+}
+
+
+div#back {
+	z-index: 100;
+	background-color: blue;
+	float: none;
+	width: 100%;
+	height: 900px;
+	vertical-align: top;
+	margin-right: auto;
+	margin-left: auto;
+	background-position: center center;
+	background-size: cover;
+}
+
+.container img {
+width: 30%;
+height: auto;
+max-width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+img {
+width: 60%;
+height: auto;
+max-width: 60%;
+margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
