@@ -49,8 +49,8 @@ h3 {
 h2 {
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
-	font-size: 140px;
-	font-weight: 300;
+	font-size: 150px;
+	font-weight: 600;
 	text-align: center;
 }
 
@@ -104,16 +104,21 @@ p#p01 {
     color:blue;
 }
 
+p#p02 {
+
+    font-size: 10px;
+    line-height: 10px;
+}
+
 h5 {
 	font-family: 'Montserrat', sans-serif;
     font-size: 10px;
     letter-spacing: 1px;
     text-align: center;  
     position: relative;
-	font-style: italic;
 	margin-right: 5%;
 	margin-right: 5%;
-	margin-bottom: 5%
+	margin-bottom: 5%;
 }
 
 
@@ -222,7 +227,7 @@ div#Plusje img {
 div#eline {
 	margin-top: 30%;
 	text-align: center;
-	height: 760px;
+	height: 900px;
 }
 
 
@@ -240,18 +245,18 @@ div#back {
 }
 
 .container img {
-width: 30%;
-height: auto;
-max-width: 30%;
-    display: block;
-    margin: 0 auto;
+	width: 40%;
+	height: auto;
+	max-width: 40%;
+	display: block;
+	margin: 0 auto;
 }
 
 img {
-width: 60%;
-height: auto;
-max-width: 60%;
-margin: 0 auto;
+	width: 70%;
+	height: auto;
+	max-width: 70%;
+	margin: 0 auto;
     display: block;
     margin: 0 auto;
 }
