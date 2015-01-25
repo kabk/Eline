@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>home</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
+    <style type="text/css">
+      .blurElement {
+        -webkit-filter: blur(10px);
+      }
+    </style>
+    <script src="jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        // init blur for found items
+        $('.blurElement').each(function() {
+            var currentBlur = $(this).data('current-blur');
+            // console.log(currentBlur)
+
+            // debug hack
+            $(this).addClass('debug-focusMethod-' + $(this).data('focus-method'))
+
+            $(this).css('webkitFilter', 'blur('+(currentBlur)+'px)');
+          })
+
+        $('#focus').click(function(event){
+          event.preventDefault();
+
+          $('.blurElement').each(function(item) {
+            var currentBlur = $(this).data('current-blur');
+            var maxBlur = $(this).data('max-blur');
+            var focusMethod = $(this).data('focus-method');
+            var newBlur;
+
+            // debug hack
+            $(this).removeClass('debug-focusMethod-up debug-focusMethod-down')
+
+            // add more or less blur
+            if(focusMethod == 'up') {
+              newBlur = currentBlur+1;
+            }
+            if(focusMethod == 'down') {
+              newBlur = currentBlur-1
+            }
+
+            if(newBlur == maxBlur) {
+              // new blur is the same as maxBlur so we need to flip the focus
+              if(focusMethod == 'up') {
+                focusMethod = "down"
+              } else {
+                focusMethod = "up"
+              }
+
+              $(this).data('focus-method', focusMethod)
+            }
+
+            if(newBlur == 0) {
+              focusMethod = 'up';
+              $(this).data('focus-method', focusMethod)
+            }
+
+            $(this).css('webkitFilter', 'blur('+(newBlur)+'px)').data('current-blur', newBlur);
+
+            // debug message
+            // console.log('item ' + item + ' currentblur ' + currentBlur + ' maxBlur ' + maxBlur + ' focusMethod ' + focusMethod + ' newBlur ' + newBlur);
+
+            // debug hack
+            $(this).addClass('debug-focusMethod-' + focusMethod)
+
+          })
+          // debug message
+          console.log('end click')
+        })
+      })
+    </script> 
+  </head>
+  <body>
+    <a href="#focus" id="focus">focus</a>
+    <div class="blurElement" data-max-blur="5" data-current-blur="2" data-focus-method="up">Dingetje 1</div>
+    <div class="blurElement" data-max-blur="10" data-current-blur="9" data-focus-method="up">Dingetje 2</div>
+    <div class="blurElement" data-max-blur="8" data-current-blur="3" data-focus-method="up">Dingetje 3</div>
+    <div class="blurElement" data-max-blur="6" data-current-blur="5" data-focus-method="up">Dingetje 4</div>
+</html>

@@ -38,28 +38,49 @@ body {
 }
 
 
-h3 {
-	font-family: 'Montserrat', sans-serif;
-	text-decoration: none;
-	font-size: 80px;
-	color: white;
-	font-weight: 300;
-}
-
-h2 {
-	font-family: 'Montserrat', sans-serif;
-	text-decoration: none;
-	font-size: 150px;
-	font-weight: 600;
-	text-align: center;
-}
-
 h1 {
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
 	font-size: 40px;
 	font-weight: 600;
 	letter-spacing: 2px;
+}
+
+
+/*h2 {
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+	font-size: 18px;
+	font-weight: 200;
+}
+*/
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+	font-size: 15px;
+	font-weight: 200;
+	text-decoration: none;
+	text-decoration: underline;
+	margin-bottom: 5px;
+	margin-top: 30px;
+}
+h3{ margin:0;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+	font-size: 15px;
+	padding-left: 20px;
+	margin-top: 30px;
+}
+
+
+
+h6 {
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	font-size: 140px;
+	font-weight: 600;
+	text-align: center;
 }
 
 h1#h101 {
@@ -69,11 +90,13 @@ h1#h101 {
 h4 {
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
-	font-size: 12px;
-	letter-spacing: 3px;
-	color: transparent;
-	text-shadow: 0 0 3px #000;
+	font-size: 10px;
+	letter-spacing: 1px;
+	/* color: transparent;
+	text-shadow: 0 0 3px #000; */
 	text-align: center;
+	line-height: 13px;
+
 }
 
 blockquote {
@@ -81,9 +104,9 @@ blockquote {
 	font-weight: 400; 
 	text-decoration: none;
 	font-size: 20px;
-	font-style: italic;
 	letter-spacing: 2px;
 	color: blue;
+	margin-top: 40px;
 }
 
 p {
@@ -94,7 +117,8 @@ p {
 	letter-spacing: 1px;
 	font-size: 15px;
 	font-weight: 200;
-	line-height: 20px;
+	line-height: 25px;
+	margin-top: 0px;
 }
 
 
@@ -104,23 +128,30 @@ p#p01 {
     color:blue;
 }
 
-p#p02 {
-
+.noot {
     font-size: 10px;
-    line-height: 10px;
+    line-height: 15px;
+    margin:0;
 }
 
-h5 {
+.bijschrift {
 	font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
+    font-size: 11px;
+    line-height: 15px;
     letter-spacing: 1px;
-    text-align: center;  
     position: relative;
-	margin-right: 5%;
-	margin-right: 5%;
-	margin-bottom: 5%;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 5px;
 }
 
+.sub {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-decoration: underline;
+}
 
 
 #tekstbox {
@@ -130,11 +161,12 @@ h5 {
 
 li {
     list-style: none;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
 	letter-spacing: 2px;
 	text-decoration: none;
+	text-decoration: underline;
 }
 
 a {
@@ -245,18 +277,77 @@ div#back {
 }
 
 .container img {
-	width: 40%;
+	width: 50%;
 	height: auto;
-	max-width: 40%;
+	max-width: 50%;
 	display: block;
 	margin: 0 auto;
 }
 
 img {
-	width: 70%;
+	width: 50%;
 	height: auto;
-	max-width: 70%;
 	margin: 0 auto;
     display: block;
     margin: 0 auto;
+    margin-top: 20px;
+}
+
+sup {
+	color: blue;
+}
+
+div#eline {  
+    margin-top:0;
+    background: #57ffb6;
+}
+
+#noemhemalsjeblieftlandingofzo {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+div#eline h6 {  
+	margin-top:0; padding-top: 30%;
+}
+
+div#content {
+    width: 50%;
+    margin: 0 auto;
+}
+            
+
+nav {
+z-index: 999999;
+}
+
+.blurElement {
+	margin-bottom: 300px;
+	padding-top: 30px;
+}
+
+.image {
+	width: 50%;
+	margin: 0 auto;
+    display: block;
+    margin: 0 auto;
+}
+.intro { 
+	padding: 0 35px;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px
+    /*font-weight: 300;*/
+}
+
+/* img#diciplines {
+	width: 100%;
+} */
+
+table#kleuren {
+	text-decoration: none;
+	text-align: left;
+}
 }
