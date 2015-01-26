@@ -80,7 +80,9 @@ h6 {
 	text-decoration: none;
 	font-size: 140px;
 	font-weight: 600;
+	letter-spacing: 3px;
 	text-align: center;
+	z-index: 1;
 }
 
 h1#h101 {
@@ -96,6 +98,7 @@ h4 {
 	text-shadow: 0 0 3px #000; */
 	text-align: center;
 	line-height: 13px;
+	margin-top: 100px;
 
 }
 
@@ -187,6 +190,7 @@ nav {
 	padding-left: 7%;
 	display: none;
 	position: fixed;
+	z-index: 20;
     
 }
 
